@@ -4,3 +4,4 @@ class Post < ActiveRecord::Base
   validates :content, presence: true, length: { maximum: 140 } #tweets are cappet at 140 characters
   default_scope -> { order(created_at: :desc) } #newest tweets / posts first
 end
+ 
