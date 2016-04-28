@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   # define root of the url
   root 'pages#index'
-  
+  resources :posts
   # define Routes for Pages
   get '/home' => 'pages#home' #override default routes
   get '/user/:id' => 'pages#profile'
